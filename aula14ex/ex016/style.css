@@ -19,6 +19,15 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.397);
 }
 
+.dados {
+    margin: 10px 250px 10px 10px;
+
+}
+
+div#res{
+    margin-top: 20px;
+}
+
 footer {
     color: white;
     text-align: center;
