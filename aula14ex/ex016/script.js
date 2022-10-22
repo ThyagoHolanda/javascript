@@ -1,12 +1,26 @@
 function contar() {
-    var inicio = window.document.querySelector('input#inicio')
-    var fim = document.querySelector('input#fim')
-    var passo = document.getElementById('passo')
+    var inicio = Number(window.document.querySelector('input#inicio').value)
+    var fim = Number(document.querySelector('input#fim').value)
+    var passo = Number(document.getElementById('passo').value)
     var res = document.querySelector('div#res')
 
-    while (inicio <= fim) {
-        
-    }
 
-    res.innerHTML = `Começa em ${inicio.value}, terminal em ${fim.value}. Indo de ${passo.value} em ${passo.value}.`
+    if (inicio >= fim){
+        alert('Inicio não pode ser maior que o fim')
+    }else if (passo <= 0){
+        alert('Passo não pode ser menor do que 1')
+    }else {
+        for (var start = inicio;inicio <= fim ; inicio = inicio + passo){
+            if (start == inicio){
+                res.innerHTML = `${inicio} &#x1F449 `
+            }else {
+                res.innerHTML += `${inicio} &#x1F449 `
+            }
+        }
+
+        if (inicio >= passo){
+            res.innerHTML += `&#x1F3C1` 
+        }   
+    }
+ 
 }
