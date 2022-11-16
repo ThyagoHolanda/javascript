@@ -20,7 +20,7 @@ section {
 }
 
 select#lista {
-    width: 100px;
+    min-width: 150px;
 }
 
 footer {
