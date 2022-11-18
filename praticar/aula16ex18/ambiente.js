@@ -1,4 +1,4 @@
-let valores = []
+/*let valores = []
 
 console.log(valores)
 
@@ -49,3 +49,8 @@ adicionar(2)
 console.log(valores)
 
 finalizar()
+
+*/
+let num = 3
+num **= 3
+console.log(num)
